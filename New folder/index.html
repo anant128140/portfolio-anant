@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anant Prakash — Portfolio</title>
+  <style>
+    :root{--accent:#0b84ff;--muted:#666;--card:#fff;--bg:#f6f8fb;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220;line-height:1.4}
+    .container{max-width:1000px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6fa8ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{color:var(--accent);background:rgba(11,132,255,0.06)}
+    .cta{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+
+    main{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    .hero{background:linear-gradient(180deg,rgba(11,132,255,0.06),transparent);padding:18px;border-radius:12px}
+    .hero h1{margin:0 0 6px;font-size:22px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(7,12,20,0.04)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:6px 10px;border-radius:999px;border:1px solid rgba(11,132,255,0.12);font-size:13px}
+
+    .projects{display:grid;gap:12px}
+    .project{padding:12px;border-radius:10px;border:1px solid rgba(11,132,255,0.06)}
+    .project h3{margin:0 0 6px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      header{gap:10px}
+      .avatar{width:52px;height:52px}
+      nav{display:none}
+      .mobile-nav{display:flex;gap:8px}
+    }
+
+    /* small touches */
+    a.icon{display:inline-flex;gap:8px;align-items:center}
+    .row{display:flex;gap:10px;align-items:center}
+    .contact a{display:inline-block;margin-right:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AP</div>
+        <div>
+          <div style="font-weight:700">Anant Prakash</div>
+          <div class="muted">Python Full-Stack Developer • AI / ML Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <h1>Hi — I'm Anant. I build full-stack apps & AI solutions.</h1>
+        <div class="muted">Available for internships & entry-level roles. Passionate about AI, cybersecurity and building products that help users.</div>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta" href="mailto:prakashanant091@gmail.com">Email Me</a>
+          <a href="https://www.linkedin.com/in/anant-prakash-768064294" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="#projects">See Projects</a>
+        </div>
+      </section>
+
+      <div class="grid">
+        <div>
+          <section id="about" class="card">
+            <h2 style="margin-top:0">About</h2>
+            <p class="muted">A highly motivated Software Developer with experience in Python Full Stack Development, Data Science and AI. Skilled at designing scalable web applications, implementing ML algorithms and improving performance.</p>
+
+            <div style="margin-top:12px">
+              <strong>Contact</strong>
+              <div class="muted contact">Noida, Uttar Pradesh • <a href="tel:8002152840">8002152840</a> • <a href="mailto:prakashanant091@gmail.com">prakashanant091@gmail.com</a></div>
+            </div>
+
+            <div style="margin-top:12px">
+              <strong>Education</strong>
+              <div class="muted">B.Tech — Computer Science Engineering, Shaheed Bhagat Singh State University (2021–2025) — 72.4%</div>
+            </div>
+          </section>
+
+          <section id="projects" class="card" style="margin-top:12px">
+            <h2 style="margin-top:0">Key Projects</h2>
+            <div class="projects">
+              <div class="project">
+                <h3>Phishing AI Detector (Mar 2025 – May 2025)</h3>
+                <p>Designed an AI-powered phishing detection system achieving 95% classification accuracy. Improved detection speed and reduced phishing incidents. Tech: Python, ML, feature engineering.</p>
+              </div>
+
+              <div class="project">
+                <h3>Internet Banking System (Oct 2024 – Dec 2024)</h3>
+                <p>Built a secure internet banking system with real-time transactions and secure authentication. Focus on performance, UX, and security. Tech: Django/React (concept).</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section id="experience" class="card" style="margin-top:12px">
+            <h2 style="margin-top:0">Experience</h2>
+            <div>
+              <strong>Python Full Stack Developer Intern</strong>
+              <div class="muted">Q Spider Software Testing Institute, Noida — Jan 2025 – Jun 2025</div>
+              <ul style="margin-top:8px;color:var(--muted)">
+                <li>Developed & deployed full-stack applications using Django and React; increased user engagement by ~30%.</li>
+                <li>Automated tests with Selenium; reduced bugs by ~40%.</li>
+                <li>Optimized DB queries and improved load times by ~20%.</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0">Skills</h3>
+            <div class="skills">
+              <div class="skill">Python</div>
+              <div class="skill">Django</div>
+              <div class="skill">React</div>
+              <div class="skill">HTML & CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">SQL / DBMS</div>
+              <div class="skill">Machine Learning</div>
+              <div class="skill">Cloud & Cybersecurity</div>
+            </div>
+
+            <div style="margin-top:12px">
+              <h4 style="margin:0">Certifications & Awards</h4>
+              <div class="muted" style="margin-top:8px">
+                • 288th rank — Coding Ninjas competition<br>
+                • Asia AI Odyssey Challenge — Certificate of Excellence (Microsoft, 2024)<br>
+                • Google Cybersecurity Foundation (Coursera)
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <h4 style="margin:0">Quick Links</h4>
+              <div style="margin-top:8px">
+                <a href="/Anant_Prakash_Resume.pdf" target="_blank">Download resume (PDF)</a>
+                <div style="margin-top:6px"><a href="https://www.linkedin.com/in/anant-prakash-768064294" target="_blank">LinkedIn</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3 style="margin-top:0">Get in touch</h3>
+            <p class="muted">Interested in working together? Share a quick note and I will reply.</p>
+            <div style="margin-top:10px">
+              <a class="cta" href="mailto:prakashanant091@gmail.com">Email</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="muted">
+        Built with care • Good luck with your applications — Anant Prakash
+      </footer>
+    </main>
+  </div>
+  <script>
+    // Small JS for future enhancements — intentionally minimal so file remains portable.
+    (function(){ /* placeholder */ })();
+  </script>
+</body>
+</html>
